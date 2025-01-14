@@ -15,7 +15,8 @@ class ListsController < ApplicationController
     end
 
     def show
-      @list = List.find(params[:id])
+      #@list = List.find(params[:id])
+      @contacts = @list.contacts
     end
     def new
       @list = List.new
