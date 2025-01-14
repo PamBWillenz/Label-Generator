@@ -1,0 +1,51 @@
+<%= form_with(model: [@list, @contact], local: true, class: 'form') do |form| %>
+<% if @contact.errors.any? %>
+<div id="error_explanation" class="alert alert-danger">
+  <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+  <ul>
+    <% @contact.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="form-group">
+  <%= form.label :first_name %>
+  <%= form.text_field :first_name, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= form.label :last_name %>
+  <%= form.text_field :last_name, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= form.label :address_line1 %>
+  <%= form.text_field :address_line1, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= form.label :address_line2 %>
+  <%= form.text_field :address_line2, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= form.label :city %>
+  <%= form.text_field :city, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= form.label :state %>
+  <%= form.text_field :state, class: 'form-control' %>
+</div>
+
+<div class="form-group">
+  <%= form.label :zip_code %>
+  <%= form.text_field :zip_code, class: 'form-control' %>
+</div>
+
+<div class="actions">
+  <%= form.submit class: 'btn btn-primary' %>
+</div>
+<% end %>

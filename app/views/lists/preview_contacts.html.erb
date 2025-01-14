@@ -1,0 +1,26 @@
+<h1>Contacts in <%= @list.name %></h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @contacts.each do |contact| %>
+    <tr>
+      <td><%= contact.full_name %></td>
+      <td><%= contact.full_address %></td>
+      <td>
+        <%= link_to 'Edit', edit_list_contact_path(@list, contact) %> |
+        <%= link_to 'Delete', list_contact_path(@list, contact), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Add Contact', new_list_contact_path(@list) %>
+<%= link_to 'Back to List', list_path(@list) %>
