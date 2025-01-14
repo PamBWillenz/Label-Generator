@@ -11,7 +11,8 @@ class LabelGenerator
   end
 
   def generate
-    raise "Label Type Unknown '#{label_type}'" unless Prawn::Labels.types.include?(@label_type)
+    raise "Label Type Unknown '#{@label_type}'" unless Prawn::Labels.types.include?(@label_type)
+    
     Prawn::Labels.generate("labels.pdf", @list.contacts, type: @label_type) do |pdf, contact|
       pdf.font_size 10
       pdf.text contact.full_name
