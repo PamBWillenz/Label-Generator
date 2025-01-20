@@ -47,6 +47,7 @@ gem 'prawn-labels', '~> 1.2.0'
 gem 'simple_form', '~> 5.2'
 #gem 'dartsass-sprockets', '~> 3.0.0'
 gem 'sassc-rails', '~> 2.1'
+gem 'csv' 
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

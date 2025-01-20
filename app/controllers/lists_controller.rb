@@ -38,6 +38,15 @@ class ListsController < ApplicationController
                 disposition: "attachment"
     end
 
+    def upload_contacts
+      if params[:file].present?
+        Contact.import_from_csv(params[:file], @list)
+        redirect_to preview_contacts_list_path(@list), notice: "Contacts imported successfully."
+      else
+        redirect_to preview_contacts_list_path(@list), notice: "Please upload a csv file."
+      end
+    end
+
     def preview_contacts
       @contacts = @list.contacts
     end

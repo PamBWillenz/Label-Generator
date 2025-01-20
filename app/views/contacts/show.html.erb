@@ -1,0 +1,39 @@
+<h1>Contact Details</h1>
+
+<p>
+  <strong>First Name:</strong>
+  <%= @contact.first_name %>
+</p>
+
+<p>
+  <strong>Last Name:</strong>
+  <%= @contact.last_name %>
+</p>
+
+<p>
+  <strong>Address Line 1:</strong>
+  <%= @contact.address_line1 %>
+</p>
+
+<p>
+  <strong>Address Line 2:</strong>
+  <%= @contact.address_line2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @contact.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @contact.state %>
+</p>
+
+<p>
+  <strong>Zip Code:</strong>
+  <%= @contact.zip_code %>
+</p>
+
+<%= link_to 'Edit', edit_list_contact_path(@list, @contact), class: 'btn btn-primary' %> |
+<%= link_to 'Back to Contacts', preview_contacts_list_path(@list), class: 'btn btn-secondary' %>

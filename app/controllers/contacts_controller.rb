@@ -1,7 +1,6 @@
 class ContactsController < ApplicationController
   before_action :set_list
-  before_action :set_contact, only: [:edit, :update, :destroy]
-
+  
   def new
     @contact = @list.contacts.build
   end
@@ -15,10 +14,16 @@ class ContactsController < ApplicationController
     end
   end
 
+  def show
+    @contact = @list.contacts.find(params[:id])
+  end
+
   def edit
+    @contact = @list.contacts.find(params[:id])
   end
 
   def update
+    @contact = @list.contacts.find(params[:id])
     if @contact.update(contact_params)
       redirect_to preview_contacts_list_path(@list), notice: 'Contact was successfully updated.'
     else
@@ -27,6 +32,7 @@ class ContactsController < ApplicationController
   end
 
   def destroy
+    @contact = @list.contacts.find(params[:id])
     @contact.destroy
     redirect_to preview_contacts_list_path(@list), notice: 'Contact was successfully destroyed.'
   end
@@ -35,10 +41,6 @@ class ContactsController < ApplicationController
 
   def set_list
     @list = List.find(params[:list_id])
-  end
-
-  def set_contact
-    @contact = @list.contacts.find(params[:id])
   end
 
   def contact_params

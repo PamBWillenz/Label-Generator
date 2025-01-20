@@ -10,7 +10,8 @@ Rails.application.routes.draw do
     member do
       get :generate_labels
       get :preview_contacts
+      post :upload_contacts
     end
-    resources :contacts
+    resources :contacts, only: [:new, :create, :edit, :update, :destroy]
   end
 end
