@@ -338,7 +338,7 @@ DEPENDENCIES
   jbuilder
   pg (~> 1.1)
   prawn
-  prawn-labels (~> 1.2.0)
+  prawn-labels
   puma (>= 5.0)
   rails (~> 7.1.5)
   sassc-rails (~> 2.1)

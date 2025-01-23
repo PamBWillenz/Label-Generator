@@ -30,7 +30,7 @@ class ListsController < ApplicationController
       end
     end
     def generate_labels
-      label_type = params[:label_type] || "Avery5160"
+      label_type = "Avery 5160" # or get this from params if needed
       label_pdf = LabelGenerator.new(@list, label_type).generate
       send_data label_pdf,
                 filename: "#{@list.name.parameterize}_labels.pdf",

@@ -42,7 +42,7 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 
 gem 'prawn'
-gem 'prawn-labels', '~> 1.2.0'
+gem 'prawn-labels'
 #gem 'bootstrap', '~> 5.3.0'
 gem 'simple_form', '~> 5.2'
 #gem 'dartsass-sprockets', '~> 3.0.0'

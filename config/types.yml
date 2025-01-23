@@ -1,0 +1,113 @@
+# Standard Avery Label Definitions
+
+Avery5160:
+  paper_size: LETTER
+  columns: 3
+  rows: 10
+  top_margin: 12.7
+  bottom_margin: 12.7
+  left_margin: 4.7625
+  right_margin: 4.7625
+  column_gutter: 3.175
+  row_gutter: 0
+  units: mm
+  width: 66.675
+  height: 25.4
+
+Avery5163:
+  paper_size: LETTER
+  columns: 2
+  rows: 5
+  top_margin: 12.7
+  bottom_margin: 12.7
+  left_margin: 4.7625
+  right_margin: 4.7625
+  column_gutter: 3.175
+  row_gutter: 0
+  units: mm
+  width: 101.6
+  height: 50.8
+
+Avery5260:
+  paper_size: LETTER
+  columns: 3
+  rows: 10
+  top_margin: 12.7
+  bottom_margin: 12.7
+  left_margin: 4.7625
+  right_margin: 4.7625
+  column_gutter: 3.175
+  row_gutter: 0
+  units: mm
+  width: 66.675
+  height: 25.4
+
+Avery6572:
+  paper_size: LETTER
+  columns: 3
+  rows: 10
+  top_margin: 12.7
+  bottom_margin: 12.7
+  left_margin: 4.7625
+  right_margin: 4.7625
+  column_gutter: 3.175
+  row_gutter: 0
+  units: mm
+  width: 66.675
+  height: 25.4
+
+Avery6871:
+  paper_size: LETTER
+  columns: 2
+  rows: 5
+  top_margin: 12.7
+  bottom_margin: 12.7
+  left_margin: 4.7625
+  right_margin: 4.7625
+  column_gutter: 3.175
+  row_gutter: 0
+  units: mm
+  width: 101.6
+  height: 50.8
+
+Avery7160:
+  paper_size: LETTER
+  columns: 3
+  rows: 10
+  top_margin: 12.7
+  bottom_margin: 12.7
+  left_margin: 4.7625
+  right_margin: 4.7625
+  column_gutter: 3.175
+  row_gutter: 0
+  units: mm
+  width: 66.675
+  height: 25.4
+
+Avery7165:
+  paper_size: LETTER
+  columns: 3
+  rows: 10
+  top_margin: 12.7
+  bottom_margin: 12.7
+  left_margin: 4.7625
+  right_margin: 4.7625
+  column_gutter: 3.175
+  row_gutter: 0
+  units: mm
+  width: 66.675
+  height: 25.4
+
+Envelope10:
+  paper_size: LETTER
+  columns: 1
+  rows: 1
+  top_margin: 12.7
+  bottom_margin: 12.7
+  left_margin: 12.7
+  right_margin: 12.7
+  column_gutter: 0
+  row_gutter: 0
+  units: mm
+  width: 241.3
+  height: 104.775
